@@ -27,7 +27,7 @@ All files are designed to be compiled/interpreted on `Ubuntu 20.04 LTS`
 ### Shell scripts
 - Should be 2 lines long
 - First line `#!/bin/bash`
-## Taks
+## Tasks
 1. [0-run](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/0-run)
 1. [1-run_inline](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/1-run_inline)
 1. [2-print.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/2-print.py)
