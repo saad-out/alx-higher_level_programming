@@ -70,7 +70,7 @@ All files are designed to be compiled/interpreted on `Ubuntu 20.04 LTS`
    * `word_first_3` should contain the first 3 letters of the variable `word`
    * `word_last_2` should contain the last 2 letters of the variable `word`
    * `middle_word` should contain the value of the variable `word` without the first and last letters
-1. [8-concat_edges.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py): **Complete the source code to print object-oriented programming with Python, followed by a new line.**
+1. [8-concat_edges.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py): **Complete the source code to print `object-oriented programming with Python`, followed by a new line.**
    * You can find the source code [here](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py)
    * You are not allowed to use any loops or conditional statements
    * Your program should be exactly 5 lines long
