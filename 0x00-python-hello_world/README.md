@@ -88,15 +88,15 @@ All files are designed to be compiled/interpreted on `Ubuntu 20.04 LTS`
   * Return: `0` if there is no cycle, `1` if there is a cycle
 #### Requirements:
   * Only these functions are allowed: `write`, `printf`, `putchar`, `puts`, `malloc`, `free`
-1. [100-write.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py): **Write a Python script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.**
+12. [100-write.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py): **Write a Python script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.**
    * Use the function `write` from the `sys` module
    * You are not allowed to use `print`
    * Your script should print to `stderr`
    * Your script should exit with the status code `1`
-1. [101-compile](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/101-compile): **Write a script that compiles a Python script file.**
+13. [101-compile](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/101-compile): **Write a script that compiles a Python script file.**
    * The Python file name will be stored in the environment variable `$PYFILE`
    * The output filename has to be `$PYFILEc` (ex: `export PYFILE=my_main.py` => output filename: `my_main.pyc`)
-1. [102-magic_calculation.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py): **Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:**
+14. [102-magic_calculation.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py): **Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:**
 ```
  3           0 LOAD_CONST               1 (98)
               3 LOAD_FAST                0 (a)
