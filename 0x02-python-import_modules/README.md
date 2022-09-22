@@ -1,5 +1,22 @@
-# 0x02-python-import_modules
+<img src="https://miro.medium.com/max/664/1*pA8a2yHULkxj-f1OPSDrrQ.png" width=430 height=230>
 
+# 0x02-python-import_modules
+## About
+This is a directory for the **Python - import & modules** project's tasks, it covers *Python modules*
+## Learning objectives
+- Why Python programming is awesome
+- How to import functions from another file
+- How to use imported functions
+- How to create a module
+- How to use the built-in function `dir()`
+- How to prevent code in your script from being executed when imported
+- How to use command line arguments with your Python programs
+## Requirements
+All files are designed to be compiled/interpreted on `Ubuntu 20.04 LTS`
+### Python Scripts
+- Python 3
+- Code should use the `pycodestyle (version 2.8.*)`
+- First line `#!/usr/bin/python3`
 ## Tasks
 1. [0-add.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py): **Write a program that imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`**
    * You have to use `print` function with string format to display integers
