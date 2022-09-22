@@ -10,13 +10,13 @@ if __name__ == '__main__':
     b = int(argv[3])
     op = argv[2]
     if op == '+':
-        print(calculator_1.add(a, b))
+        print("{} + {} = {}".format(a, b, calculator_1.add(a, b)))
     elif op == '-':
-        print(calculator_1.sub(a, b))
+        print("{} - {} = {}".format(a, b, calculator_1.sub(a, b)))
     elif op == '*':
-        print(calculator_1.mul(a, b))
+        print("{} * {} = {}".format(a, b, calculator_1.mul(a, b)))
     elif op == '/':
-        print(calculator_1.div(a, b))
+        print("{} / {} = {}".format(a, b, calculator_1.div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
