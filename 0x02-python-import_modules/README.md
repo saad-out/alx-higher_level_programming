@@ -41,4 +41,17 @@
    ```
    here
    ```
+1. [3-infinite_add.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x02-python-import_modules/3-infinite_add.py): **Write a program that prints the result of the addition of all arguments**
+   * The output should be the result of the addition of all arguments, followed by a new line
+   * You can cast arguments into integers by using `int()` (you can assume that all arguments can be casted into integers)
+   * Your code should not be executed when imported
+   ```
+   here
+   ```
+   * Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
+   ```
+   here
+   ```
+   * Remember how you did (or did not) do it in C? `#pythoniscool`
+
 
