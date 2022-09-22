@@ -53,5 +53,17 @@
    here
    ```
    * Remember how you did (or did not) do it in C? `#pythoniscool`
-
-
+1. [4-hidden_discovery.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x02-python-import_modules/4-hidden_discovery.py): **Write a program that prints all the names defined by the compiled module `hidden_4.pyc` (please download it locally).**
+   * You should print one name per line, in alpha order
+   * You should print only names that do **not** start with `__`
+   * Your code should not be executed when imported
+   * Make sure you are running your code in Python3.8.x (`hidden_4.pyc` has been compiled with this version)
+   ```
+   here
+   ```
+1. [5-variable_load.py](https://github.com/saad-out/alx-higher_level_programming/blob/main/0x02-python-import_modules/5-variable_load.py): **Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.**
+   * ou are not allowed to use `*` for importing or `__import__`
+   * Your code should not be executed when imported
+   ```
+   here
+   ```
