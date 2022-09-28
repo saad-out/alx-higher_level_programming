@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
 
     # check if not empty and is sring #
-    if roman_string is None:
+    if (roman_string is None) or (isinstance(roman_string, str) is False):
         return 0
 
     romans = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
