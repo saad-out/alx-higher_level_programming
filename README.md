@@ -1,4 +1,4 @@
-<img src="https://cdn.programadoresbrasil.com.br/wp-content/uploads/2021/04/rxezjyf4ojx41-1140x694.png" width=700 height=350>
+<img src="https://cdn.programadoresbrasil.com.br/wp-content/uploads/2021/04/rxezjyf4ojx41-1140x694.png" width=450 height=250>
 
 # Alx-higher_level_programming
 ## About this repository
@@ -8,6 +8,8 @@ It takes part of the second sprint of the [ALX SE Program](https://www.alxafrica
 1. [0x00-python-hello_world](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x00-python-hello_world)
 1. [0x01-python-if_else_loops_functions](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
 1. [0x02-python-import_modules](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x02-python-import_modules)
-1. **more coming**
+1. [0x03-python-data_structures](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x03-python-data_structures)
+1. [0x04-python-more_data_structures](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x04-python-more_data_structures)
+1. **More coming...**
 ## Credits
 This work is *done*, *owned* and *maintained* *by* ***Saad Outchakoucht*** [@saadout1](https://twitter.com/saadout1)
