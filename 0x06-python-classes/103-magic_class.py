@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+"""module containing re-built function using Python bytcodes"""
+
 
 import math
 
 
 class MagicClass:
+    """magic class built from its bytecodes"""
+
     def __init__(self, radius):
         self.__radius = 0
         if type(radius) is not int or type(radius) is not float:
