@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This is '2-rectangle' module.
+This is '4-rectangle' module.
 Functions and Classes:
     class Rectangle()
 """
