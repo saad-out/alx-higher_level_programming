@@ -66,5 +66,4 @@ class Rectangle():
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        print("By rectangle...")
-        del self
+        print("Bye rectangle...")
