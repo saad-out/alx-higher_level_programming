@@ -1,4 +1,4 @@
-#!/usr/bin/pythn3
+#!/usr/bin/python3
 """
 This is '101-locked_class' module
 Classes:
