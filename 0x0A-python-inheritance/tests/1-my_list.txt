@@ -1,0 +1,42 @@
+The '1-my_list' module
+==========================
+
+using 'My_List'
+-------------------
+
+First import 'My_List' from '1-my_list':
+	
+	>>> MyList = __import__('1-my_list').MyList
+
+Then use it:
+
+	>>> a = MyList()
+	>>> a.append(1)
+	>>> a.append(-2)
+	>>> a.append(44)
+	>>> print(a)
+	[1, -2, 44]
+	>>> a.print_sorted()
+	[-2, 1, 44]
+	>>> print(a)
+	[1, -2, 44]
+	>>> b = MyList()
+	>>> print(b)
+	[]
+	>>> b.print_sorted()
+	[]
+	>>> b.append(0)
+	>>> print(b)
+	[0]
+	>>> b.print_sorted()
+	[0]
+	>>> a.pop()
+	44
+	>>> a.pop()
+	-2
+	>>> a.pop()
+	1
+	>>> print(a)
+	[]
+	>>> a.print_sorted()
+	[]
