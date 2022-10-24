@@ -1,0 +1,25 @@
+Import the class:
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Use it:
+
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):	
+	Exception: area() is not implemented
+	>>> bg.id = 99
+	>>> bg.id
+	99
+	>>> bg.integer_validator("a", 12)
+	>>> bg.integer_validator("my_int", 120000)
+	>>> bg.integer_validator("b", -12)
+	Traceback (most recent call last):
+	ValueError: b must be greater than 0
+	>>> bg.integer_validator("neg", [-12])
+	Traceback (most recent call last):
+	TypeError: neg must be an integer
+	>>> bg.integer_validator("null", 0)
+	Traceback (most recent call last):
+	ValueError: null must be greater than 0
+
