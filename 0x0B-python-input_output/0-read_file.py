@@ -7,5 +7,6 @@ Functions and Classes:
 
 
 def read_file(filename=""):
+    """read content of a file and print it to stdout"""
     with open(filename, "r", encoding="UTF-8") as f:
         print(f.read(), end="")
