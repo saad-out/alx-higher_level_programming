@@ -22,7 +22,7 @@ class Student():
         for item in dir(self):
             condition_1 = not item.startswith("__")
             condition_2 = not callable(getattr(self, item))
-            if attrs:
+            if type(attrs) is list:
                 condition_3 = item in attrs
             else:
                 condition_3 = True
