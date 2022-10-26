@@ -14,7 +14,7 @@ def pascal_triangle(n):
         return []
 
     pascal = [[1]]
-    if n >= 1:
+    if n >= 2:
         pascal.append([1, 1])
     for time in range(n-2):
         prev = pascal[-1]
