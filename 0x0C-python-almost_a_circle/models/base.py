@@ -67,10 +67,13 @@ class Base():
         """
         returns an instance with all attributes already set
         """
-        if dictionary and (cls is not Base):
+        if dictionary:
 
             # initialize a dummy instance
-            tmp = cls(1, 1, 1)
+            if cls is Base:
+                tmp = cls()
+            else:
+                tmp = cls(1, 1, 1)
 
             if isinstance(tmp, Base):
                 tmp.update(**dictionary)
