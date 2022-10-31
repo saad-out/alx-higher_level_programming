@@ -99,3 +99,63 @@ class Base():
                 my_list.append(cls.create(**d))
 
         return my_list
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        writes the CSV representation of list_objs to a file
+        """
+        import csv
+
+        filename = cls.__name__ + ".csv"
+        my_list = []
+        for item in list_objs:
+            if isinstance(item, Base):
+                d = item.to_dictionary()
+                my_list.append(d)
+
+        with open(filename, "w", encoding="UTF-8", newline="") as f:
+            f_csv = csv.writer(f)
+
+            for d in my_list:
+                if "size" in d.keys():
+                    f_csv.writerow([d['id'], d['size'], d['x'], d['y']])
+                else:
+                    f_csv.writerow([d['id'], d['width'],
+                                   d['height'], d['x'], d['y']])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+        returns a list of instances
+        """
+        import csv
+
+        filename = cls.__name__ + ".csv"
+        keys = ["id", "x", "y"]
+        if filename == "Rectangle.csv":
+            keys.insert(1, "width")
+            keys.insert(2, "height")
+        else:
+            keys.insert(1, "size")
+
+        my_list = []
+        dicts = []
+        try:
+            with open(filename, "r", encoding="UTF-8", newline="") as f:
+                f_csv = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+
+                for row in f_csv:
+                    d = {}
+                    index = 0
+                    for attribute in keys:
+                        d[attribute] = int(row[index])
+                        index += 1
+                    dicts.append(d)
+        except FileNotFoundError:
+            return my_list
+
+        for d in dicts:
+            my_list.append(cls.create(**d))
+
+        return my_list
