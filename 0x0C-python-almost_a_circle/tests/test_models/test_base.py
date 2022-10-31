@@ -14,8 +14,8 @@ class TestBase(unittest.TestCase):
         a = Base()
         tmp = Base(33)
         b = Base()
-        self.assertEqual(a.id, 2)
-        self.assertEqual(b.id, 3)
+        self.assertEqual(a.id, b.id - 1)
+        self.assertEqual(b.id, a.id + 1)
         self.assertEqual(tmp.id, 33)
 
     def test_exception(self):
@@ -52,6 +52,21 @@ class TestBase(unittest.TestCase):
         json_s = Base.to_json_string([])
         self.assertEqual(json_s, "[]")
 
+    def test_create(self):
+        a_dict = {'size': 5, 'id': 33, 'x': 2, 'y': 4}
+        a = Square.create(**a_dict)
+        self.assertEqual(a.size, a_dict['size'])
+        self.assertEqual(a.id, a_dict['id'])
+        self.assertEqual(a.x, a_dict['x'])
+        self.assertEqual(a.y, a_dict['y'])
+
+        a_dict = {'width': 50, 'height': 60, 'id': 39993, 'x': 2, 'y': 4}
+        a = Rectangle.create(**a_dict)
+        self.assertEqual(a.width, a_dict['width'])
+        self.assertEqual(a.height, a_dict['height'])
+        self.assertEqual(a.id, a_dict['id'])
+        self.assertEqual(a.x, a_dict['x'])
+        self.assertEqual(a.y, a_dict['y'])
 
 if __name__ == '__main__':
     unitest.main()
