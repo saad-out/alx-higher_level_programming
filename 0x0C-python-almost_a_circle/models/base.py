@@ -67,13 +67,17 @@ class Base():
         """
         returns an instance with all attributes already set
         """
+        from models.square import Square
+
         if dictionary:
 
             # initialize a dummy instance
             if cls is Base:
                 tmp = cls()
+            elif cls is Square:
+                tmp = cls(1)
             else:
-                tmp = cls(1, 1, 1)
+                tmp = cls(1, 1)  # Rectangle
 
             if isinstance(tmp, Base):
                 tmp.update(**dictionary)
