@@ -8,14 +8,17 @@ def find_peak(int_l):
     """
     finds a peak in a list of unsorted integers
     """
-    if type(int_l) is list:
-        for i in range(len(int_l)):
-            is_peak = True
-            if i-1 >= 0 and int_l[i-1] > int_l[i]:
-                is_peak = False
-            if i+1 < len(int_l) and int_l[i+1] > int_l[i]:
-                is_peak = False
-            if is_peak:
-                return int_l[i]
+    if not int_l or type(int_l) is not list:
+        return None
 
-    return None
+    left, right = 0, len(int_l) - 1
+    while left < right:
+        mid = left + (right - left) // 2
+        if mid < len(int_l) and int_l[mid] < int_l[mid + 1]:
+            left = mid + 1
+        elif mid >= 0 and int_l[mid] < int_l[mid - 1]:
+            right = mid - 1
+        else:
+            return int_l[mid]
+
+    return left
