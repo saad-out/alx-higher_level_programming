@@ -3,10 +3,6 @@ const args = require('process').argv;
 const request = require('request');
 
 const completedTasks = {};
-for (let i = 1; i <= 10; i++) {
-  completedTasks[i] = 0;
-}
-
 const url = String(args[2]);
 request(url, (err, res, body) => {
   if (err) {
@@ -16,8 +12,13 @@ request(url, (err, res, body) => {
 
   body = JSON.parse(body);
   for (const task of body) {
-    if (task.completed) completedTasks[task.userId]++;
+    if (task.completed) {
+      if (task.userId in completedTasks) {
+        completedTasks[task.userId]++;
+      } else {
+        completedTasks[task.userId] = 1;
+      }
+    }
   }
-
   console.log(completedTasks);
 });
